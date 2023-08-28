@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="skyblue">
+    <center><h1>Calculator</h1></center>
+    <center>Made by Shiv</center>
+    <hr style="dashed">
+
+    <div class="box">
+        <form name="calculator">
+          <table>
+            <th><input class="display" type="text" name="answer"/></th>
+           <th> <input class="col3" type="button"  value="clr" onclick="calculator.answer.value=''"></th></table>
+            <input class="col1" type="button"  value="1" onclick="calculator.answer.value+=1">
+            <input class="col2" type="button"  value="2" onclick="calculator.answer.value+=2">
+            <input class="col3" type="button"  value="3" onclick="calculator.answer.value+=3">
+            <input class="col1" type="button"  value="4" onclick="calculator.answer.value+=4">
+            <input class="col2" type="button"  value="5" onclick="calculator.answer.value+=5">
+            <input class="col3" type="button"  value="6" onclick="calculator.answer.value+=6">
+            <input class="col1" type="button"  value="7" onclick="calculator.answer.value+=7">
+            <input class="col2" type="button"  value="8" onclick="calculator.answer.value+=8">
+            <input class="col3" type="button"  value="9" onclick="calculator.answer.value+='9'">
+            <input class="col1" type="button"  value="." onclick="calculator.answer.value+='.'">
+            <input class="col2" type="button"  value="0" onclick="calculator.answer.value+=0">
+            <input class="col3" type="button"  value="=" onclick="calculator.answer.value=eval(calculator.answer.value)">
+            <input class="col1" type="button"  value="+" onclick="calculator.answer.value+='+'">
+            <input class="col2" type="button"  value="-" onclick="calculator.answer.value+='-'">
+            <input class="col3" type="button"  value="*" onclick="calculator.answer.value+='*'">
+        
+        </form>
+    </div>
+
+    
+</body>
+</html>
